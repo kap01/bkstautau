@@ -304,6 +304,12 @@ yet in the notebook, numbers from a shell check)
   and GS ~20 %, so back-to-back b-jet pairs are at best ~60 % pair
   creation. Same purities at pTHat > 10 (jets > 10 GeV) but with only
   2 % of signal events passing the two-b-jet requirement.
+* **b-jet pT does not select pair creation; it enriches gluon splitting.**
+  In the pTHat > 100 sample, in bins of signal b-jet (with nu) pT from 100
+  to 400 GeV the mix is PC 4-11 %, FE 30-34 %, GS 56-63 %, vs PC ~15 % in
+  bins of b-hadron pT. Reason: at these pT 56-70 % of GS jets contain both
+  b-hadrons, so the GS jet carries ~2-2.8x its b-hadron pT (median jet/B
+  ratio 2.1-2.8) against 1.2-1.3 for PC and FE.
 
 **Neutrino collinearity in the tau decays** (shell check 2026-10-06, not
 in the notebook)
