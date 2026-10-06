@@ -305,6 +305,26 @@ yet in the notebook, numbers from a shell check)
   creation. Same purities at pTHat > 10 (jets > 10 GeV) but with only
   2 % of signal events passing the two-b-jet requirement.
 
+**Neutrino collinearity in the tau decays** (shell check 2026-10-06, not
+in the notebook)
+* The nu pair from tau -> mu nu nu follows the muon to ~1.5 x m_tau/p_tau:
+  angle(mu, nu pair) median 0.05 rad (dR 0.10) at tau pT ~ 32 GeV (hard
+  sample), 0.12 rad (dR 0.46) at tau pT ~ 6 GeV (inclusive pTHat > 100),
+  0.25 rad (dR 1.2) at tau pT ~ 2 GeV (pTHat > 10). Same for tau_h vis vs
+  its neutrino. The neutrino momentum perpendicular to the muon direction
+  is boost-independent, median 1.7 GeV (16/84 %: 0.75 / 3.6 GeV).
+* Direction is not the problem, magnitude is: the nu pair carries a
+  median 67 % of the tau momentum (16/84 %: 38 / 90 %); tau_h visible
+  keeps 68 % (38 / 90 %).
+* The two taus are nearly parallel: angle(tau+, tau-) median 0.02 rad at
+  B ~ 90 GeV (dR(mu, tau_h vis) 0.08), 0.05 rad at pTHat > 100. The
+  di-tau collinear approximation (two fractions from two MET components)
+  is therefore ill-conditioned here; MET only measures the sum along the
+  common direction. Constraints have to come from vertexing: B line of
+  flight (PV -> K* vertex), B mass, tau masses, and the tau_h decay vertex
+  for 3-prong decays (25 %); with a 3-prong tau_h the system is
+  overconstrained by one, with a 1-prong it is one short.
+
 **q2**
 * Flat-phase-space envelope: min 12.6 GeV2 = (2 m_tau)2, mean 15.7, max
   20.6 GeV2. The upper edge exceeds (m_B - m_K*)2 = 19.2 GeV2 because the
