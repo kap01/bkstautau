@@ -344,6 +344,16 @@ in the notebook)
   on the with-neutrino jet). Uncertainties: LO Pythia cross section
   (factor ~2), SM BR (~20 %), pTHat > 100 slightly undercounts jets > 100
   from softer scatters.
+* Same chain started from the pTHat > 10 sample (user request): 8.3 mb x
+  0.0241 anti-B0/event = 200 ub = 2.0e14 anti-B0 per ab-1; the 4-object
+  acceptance is 45 % overall but ~100 % for events with a 100 GeV jet, so
+  it must not be factorised. Fraction with no-nu jet > 100, |eta| < 2.4,
+  in acceptance: 2 events / 16361 = 1.2e-4 (Poisson 68 %: 0.4-2.8e-4);
+  power-law extrapolation of the jet tail above 30 GeV (index 3.2):
+  7.1e-5; from the pTHat > 100 sample 9.4 nb / 200 ub = 4.7e-5. All
+  consistent; the pTHat > 100 value (1099 events) is the one to use ->
+  ~140 events / ab-1 at SM BR. A pTHat > 50 bridge sample would remove the
+  stitching assumption.
 
 **q2**
 * Flat-phase-space envelope: min 12.6 GeV2 = (2 m_tau)2, mean 15.7, max
