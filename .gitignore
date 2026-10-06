@@ -1,0 +1,14 @@
+# Local build / environment: rebuild from README instructions
+install/
+src/
+env/
+venv/
+.vscode/
+
+# Compiled generator
+gen/gen_bkstautau
+
+# Scratch
+*.pyc
+__pycache__/
+.ipynb_checkpoints/

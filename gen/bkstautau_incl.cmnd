@@ -1,0 +1,49 @@
+! bkstautau_incl.cmnd
+! Inclusive QCD (pTHat > 10 GeV) with anti-B0 -> anti-K*0 tau+ tau- forced.
+
+Main:numberOfEvents = 40000
+Main:timesAllowErrors = 100
+
+! Beams: LHC Run 3
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 13600.
+
+! Inclusive hard QCD 2->2 (all light-flavour processes + massive c cbar, b bbar);
+! b quarks then come from pair creation, flavour excitation, gluon splitting
+! in the shower and MPI in their natural proportions.  Low pTHat so that the
+! sample is as inclusive as practical (sigma ~ 8 mb, ~2 % of events signal).
+! Run several seeds in parallel (see README) and concatenate.
+HardQCD:all = on
+PhaseSpace:pTHatMin = 10.
+
+! Signal decay for anti-B0 only (flavour at decay time, i.e. after any
+! B0 oscillation).  onMode = 2 keeps every existing generic channel open
+! for the particle (B0) only; the added channel (code 3) is open for the
+! antiparticle (anti-B0) only: anti-B0 -> anti-K*0 tau+ tau- with BR = 1,
+! flat phase space (meMode 0).  So B0 decays generically, anti-B0 is signal.
+511:onMode = 2
+511:addChannel = 3 1.0 0 313 15 -15
+
+! K*0 -> K+ pi- only (K0 pi0 and K0 gamma switched off).
+313:onMode = off
+313:onIfMatch = 321 211
+
+! tau decays: one tau -> mu nu nu, the other -> hadrons (electron modes
+! off).  Which charge is muonic is drawn at random per event; this is
+! done in gen_bkstautau.cc (setTauModes) because it needs the
+! particle-only / antiparticle-only onMode codes toggled between events.
+
+! Gen-jets (user settings registered in gen_bkstautau.cc): anti-kT with
+! FastJet on all final-state particles, with and without neutrinos.
+! CMS ak4GenJets-like defaults.
+Jets:R = 0.4
+Jets:pTMin = 3.
+
+! Bookkeeping
+Next:numberCount = 1000
+Next:numberShowEvent = 0
+Next:numberShowInfo = 0
+Next:numberShowProcess = 0
+Random:setSeed = on
+Random:seed = 12345
