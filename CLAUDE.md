@@ -331,6 +331,19 @@ in the notebook)
   angle(mu, nu pair) median 0.08 rad (dR 0.13; 16/84 %: 0.05 / 0.34),
   tau opening angle 0.03 rad, nu fraction unchanged (67 %). Mechanism mix
   of the selected events: GS 62 %, FE 31 %, PC 7 % (pTHat > 100 sample).
+* **Expected yield in 1 ab-1 with no-nu signal jet pT > 100, |eta| < 2.4**
+  (pTHat > 100 sample): anti-B0-at-decay per generated event = (11952 +
+  1056) / 200000 = 0.065 (dropped two-signal events counted twice, since
+  with a real BR both B's contribute); fraction of signal events passing
+  the jet cut 10.1 % (9.7 % with the four objects in acceptance);
+  sigma(cand, BR = 1) = 1.43 ub x 0.065 x 0.101 = 9.4 nb -> 9.4e9 anti-B0
+  with such a jet per ab-1. Times BR(B0 -> K*0 tau tau)_SM ~ 1e-7, BR(K*0
+  -> K+ pi-) = 2/3, 2 x BR(tau -> mu nu nu) x BR(tau -> had) = 0.226:
+  **~140 events / ab-1** before trigger and reconstruction (~135 with the
+  four objects in |eta| < 2.4; ~380 for jet pT > 50; ~270 if the cut were
+  on the with-neutrino jet). Uncertainties: LO Pythia cross section
+  (factor ~2), SM BR (~20 %), pTHat > 100 slightly undercounts jets > 100
+  from softer scatters.
 
 **q2**
 * Flat-phase-space envelope: min 12.6 GeV2 = (2 m_tau)2, mean 15.7, max
