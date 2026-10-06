@@ -324,6 +324,13 @@ in the notebook)
   flight (PV -> K* vertex), B mass, tau masses, and the tau_h decay vertex
   for 3-prong decays (25 %); with a 3-prong tau_h the system is
   overconstrained by one, with a 1-prong it is one short.
+* Signal-jet pT > 50 GeV selection (no-nu jet, |eta| < 2.4, four objects
+  in acceptance): keeps ~0.1 % of all signal events (10 of 16361 in the
+  pTHat > 10 sample, so +-30 %), 26.5 % of the pTHat > 100 sample, 76 % of
+  the hard sample. In the selection the muonic tau has pT ~ 20-24 GeV,
+  angle(mu, nu pair) median 0.08 rad (dR 0.13; 16/84 %: 0.05 / 0.34),
+  tau opening angle 0.03 rad, nu fraction unchanged (67 %). Mechanism mix
+  of the selected events: GS 62 %, FE 31 %, PC 7 % (pTHat > 100 sample).
 
 **q2**
 * Flat-phase-space envelope: min 12.6 GeV2 = (2 m_tau)2, mean 15.7, max
