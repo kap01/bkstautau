@@ -68,6 +68,8 @@ venv/                  stale Python 3.9 venv, not used; ignore
   and the row, and add them to the README column table).
 * `Jets:R`, `Jets:pTMin` are user settings registered in the C++, read from
   the card.
+* The repo is https://github.com/kap01/bkstautau (remote `origin`, SSH).
+  Commit and push after each session's changes.
 * Do not commit/regenerate `bkstautau.csv` casually: 8 MB, and the notebook
   numbers below refer to this exact sample (seed 12345, 40k events). The run
   is reproducible: re-running with the same seed after adding output columns
@@ -375,3 +377,11 @@ yet in the notebook, numbers from a shell check)
   pTHatMin = 100 (seeds 101-120) -> `gen/bkstautau_incl100.csv`, logs in
   `gen/incl100_logs/`. Mechanism fractions recorded in Conclusions. No
   notebook changes yet.
+* **2026-10-06**: Put the project on GitHub (user request):
+  https://github.com/kap01/bkstautau, branch `main`, pushed over SSH
+  (no `gh` on this machine; the repo was created by the user on the web).
+  `.gitignore` excludes `install/`, `src/`, `env/`, `venv/`, `.vscode/`
+  and the compiled binary; the samples, logs and executed notebook are
+  tracked. README gained a "Setting up from a clone" section. Commit
+  with `git add -A && git commit && git push` after changes; keep the
+  CSVs in the repo only while they stay at the current ~30 MB total.
