@@ -441,3 +441,9 @@ in the notebook)
   tracked. README gained a "Setting up from a clone" section. Commit
   with `git add -A && git commit && git push` after changes; keep the
   CSVs in the repo only while they stay at the current ~30 MB total.
+* **2026-10-07**: Summary slide deck (10 slides) of the findings, made
+  as a Claude slides artifact: https://claude.ai/artifact/Gf8dc28E82Pmv3d4ZbC7tr
+  (user asked for Google Slides; the Google Drive connector is not
+  authorised in Claude Code sessions here, so the deck is exported to
+  .pptx and uploaded to Drive by hand). Numbers on the slides are the
+  ones in Conclusions above as of this date.
